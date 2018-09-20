@@ -1,5 +1,5 @@
 body {
-  color: #000;
+  color: #faf9f7;
   background-color: #faf9f7
 }
 
@@ -23,6 +23,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .sweetSymphonies {
+    display: none
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .vertNav, .mobileBottom {
+    display: none
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .bandCarousel {
     display: none
@@ -30,8 +42,8 @@ body {
 }
 
 @media (max-width: 767px) {
-  .landingPic, #aboutUs, .listenBanner {
-    display: none
+  .landingPic, #aboutUs, .listenSection {
+    display: none !important
   }
 }
 
@@ -41,6 +53,24 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+  section.test3 {
+      padding: 40px 50px 50px 25px;
+  }
+}
+
+@media (min-width: 991px) {
+  section.test3 {
+      padding: 40px 190px 50px 150px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  section.test3 {
+    display: none
+  }
+}
 
 .landingPic {
   background-image: url(srcs/bandPicBg.jpg);
@@ -56,58 +86,83 @@ body {
 
 .listenSection {
   background-color: #D9EBDF;
-  padding-top: 370px;
-  padding-bottom: 50px
+  padding-top: 320px;
+  padding-bottom: 0px;
 }
 
 div.container.listenBanner span.austinMonthly {
-  animation: flickerAnimation 8s infinite;
+  animation: flickerAnimation 12s infinite;
   text-align: left;
   font-size: 19px
 }
 
 div.container.listenBanner span.underRadar {
-  animation: flickerAnimation 7s infinite;
+  animation: flickerAnimation 11s infinite;
   animation-delay: 5s;
-  text-align: right;
   text-indent: 40px;
-  font-size: 18px
+  font-size: 18px;
+  text-align: right;
 }
 
 div.container.listenBanner span.bcQuote {
-  animation: flickerAnimation 8s infinite;
+  animation: flickerAnimation 12s infinite;
   animation-delay: 2s;
   font-size: 19px
 }
 
 div.container.listenBanner span.goldFlake {
-  animation: flickerAnimation 6s infinite;
+  animation: flickerAnimation 9s infinite;
   animation-delay: 3s;
 }
 
 div.container.listenBanner span.sweetSymphonies {
-  animation: flickerAnimation 13s infinite;
+  animation: flickerAnimation 20s infinite;
   animation-delay: 3s;
   font-size: 17px
 }
 
+span.date {
+  float: left;
+}
+
+span.venue {
+  float: left;
+}
+
+span.city {
+  float: right;
+}
+
+.btn-outline-dark {
+  float: right
+}
+
 header {
   text-align: center;
-  line-height: 80px;
   text-indent: 10px;
+  padding-top: 10px;
 }
 
+header img {
+  vertical-align: top;
+}
 header h1 {
   display: inline-block;
-  vertical-align: bottom;
 }
 
-header a {
-  color: #c8cfdd
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .navbar-brand {
   margin-left: 30px
+}
+
+li.showTest {
+  vertical-align: bottom;
+  line-height: 28px;
+  font-size: 19px
 }
 
 .nav-item {
@@ -128,8 +183,16 @@ header a {
   color: #96c8a8 !important
 }
 
-.about {
+.videos {
   color: #7ea2ef !important
+}
+
+.about {
+  color: #b19cd9 !important
+}
+
+.newsletter {
+  color: #afaeac
 }
 
 @font-face {
@@ -174,8 +237,8 @@ header a {
   top: 40%;
   transform: translateX(-50%);
   display: inline-block;
-  box-shadow: 0 2px 23px 19px rgba(0, 0, 0, .1);
-  margin: 0 0 150px 0
+  box-shadow: 0 2px 23px 5px rgba(0, 0, 0, .1);
+  margin: 0 0 35px 0
 }
 
 .content {
@@ -191,6 +254,37 @@ header a {
   display: block;
   text-align: center;
   overflow: hidden;
+}
+
+.content.showBanner {
+  position: relative;
+  transform: translateY(-8%);
+  border: 1px solid black;
+}
+
+.content.footer {
+  margin: 0;
+  box-shadow: none
+}
+
+section.test3 {
+  box-shadow: 0 -21px 23px -3px rgba(0, 0, 0, .2);
+  top: 500px;
+  right: 500px;
+  font-family: 'Ambroise'
+}
+
+table {
+  margin: auto;
+  width: 100%
+}
+
+td, th {
+  padding: 5px 15px 5px 15px
+}
+
+tr {
+  margin-bottom: 500px
 }
 
 div#aboutUs.content.about {
@@ -212,6 +306,9 @@ div.testBox {
   margin: 0 auto;
 }
 
+section.mobileBottom {
+  text-align: center;
+}
 
 .bcLink iframe {
   border: 0;
@@ -225,6 +322,18 @@ div.testBox {
   margin:auto;
   width: 100px;
   height: 50px;
+}
+
+.fa-facebook-f {
+  color: #3B5998;
+}
+
+.fa-instagram {
+  color: #fb3958
+}
+
+.fa-twitter {
+  color: #1DA1F2
 }
 
 .container.listenBanner {
@@ -243,10 +352,13 @@ hr {
   width: 50%
 }
 
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
 h1, h2, h6, p {
   font-family: 'Ambroise', serif;
   font-style: normal;
-  text-align: center
 }
 
 h5 {
@@ -262,7 +374,20 @@ li {
 }
 
 ul {
-  list-style: none
+  padding: 0;
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul.mobileNav li{
+  margin: 2px;
+  border-bottom: 2px solid #4484b2;
+  padding: 8px 0;
+  border-bottom-width: 50%
 }
 
 button {
@@ -278,18 +403,19 @@ p {
   font-size: 20px
 }
 
+i {
+  margin: 30px;
+}
+
 .footer {
     position: fixed bottom;
     left: 0;
     bottom: 0;
+    padding-bottom: 50px;
     width: 100%;
     background-color: #000000;
     color: #faf9f7;
     text-align: center;
-}
-
-.content.info {
-
 }
 
 @-webkit-keyframes twinkle {
@@ -329,7 +455,9 @@ p {
 }
 
 .vertNav hr {
-  width: 90%
+  width: 90%;
+  border-color: #e1e0de;
+  height: 2px
 }
 
 .fab {

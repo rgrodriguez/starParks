@@ -45,6 +45,61 @@ $(document).ready(function() {
   });
 });
 
+$('#showBtn').one('click', function() {
+  $('#showBtn').append('<br><table>\
+    <tbody>\
+      <tr>\
+        <td>SEP 14 FRI</td>\
+        <td>Triple Crown Whiskey Bar and Raccoon Motel</td>\
+        <td>Davenport, IA</td>\
+        <td><a href="https://www.bandsintown.com/e/100283109?app_id=squarespace-starparks&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&mkt_source=www.starparksmusic.com" class="button">Get Tickets</a>\
+        </td>\
+      </tr>\
+      <tr>\
+        <td>SEP 15 SAT</td>\
+        <td>The Observatory</td>\
+        <td>Chicago, IL</td>\
+        <td><a href="https://www.bandsintown.com/e/100283119?app_id=squarespace-starparks&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&mkt_source=www.starparksmusic.com" class="button">Get Tickets</a>\
+        </td>\
+      </tr>\
+      <tr>\
+        <td>SEP 16 SUN</td>\
+        <td>Private (TBA)</td>\
+        <td>Kansas City, KS</td>\
+        <td><a href="https://www.bandsintown.com/e/100283136?app_id=squarespace-starparks&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&mkt_source=www.starparksmusic.com" class="button">Get Tickets</a>\
+        </td>\
+      </tr>\
+      <tr>\
+        <td>OCT 3 WED</td>\
+        <td>Cheer Up Charlies</td>\
+        <td>Austin, TX</td>\
+        <td><a href="https://www.bandsintown.com/e/100283126?app_id=squarespace-starparks&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&mkt_source=www.starparksmusic.com" class="button">Get Tickets</a>\
+        </td>\
+      </tr>\
+      <tr>\
+        <td>NOV 10 SAT</td>\
+        <td>Stay Gold</td>\
+        <td>Austin, TX</td>\
+        <td><a href="https://www.bandsintown.com/e/100283220?app_id=squarespace-starparks&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&mkt_source=www.starparksmusic.com" class="button">Get Tickets</a>\
+        </td>\
+      </tr>\
+      <tr>\
+        <td>NOV 28 WED</td>\
+        <td>Texas Radio Live w/ PR Newman</td>\
+        <td>Austin, TX</td>\
+        <td><a href="https://www.bandsintown.com/e/100283149?app_id=squarespace-starparks&came_from=267&utm_medium=api&utm_source=public_api&utm_campaign=event&mkt_source=www.starparksmusic.com" class="button">Get Tickets</a>\
+        </td>\
+      </tr>\
+    </tbody>\
+  </table>');
+});
+
+$('#aboutBtn').one('click', function() {
+  $('#aboutBtn').append('<br><h6>The project of Austin, Texas songwriter Andy Bianculli, Star Parks mixes 60s psychedelia and girl group pop with painstaking arrangements in the lineage of Lee Hazelwood, Jon Brion and Brian Wilson. The result is a set of bittersweet tracks full of melancholy and exuberance that is Dont Dwell, their debut album available on Paper Trail Records.\
+Star Parks debut album, released in 2016, has caught recognition by Paste Magazine, Daytrotter, The Austin Chronicle, KUTX 98.9, Do512, Austin Monthly, Austin Culture Man and Bandcamp. Star Parks frequents local favorite venues such as: 3Ten, The Mohawk, Stubbs, Cheer Up Charlies, The Scoot Inn, Stay Gold, ABGB, Hotel Vegas and has toured internationally.\
+</h6>');
+});
+
 /*
 $('#submitShowBtn').click(function() {
   $('ul#futureShows').append('<li>SEP 6 THU Hotel Vegas Austin, TX, United States <button type="button" class="btn btn-outline-dark">Tickets</button>\
