@@ -15,22 +15,18 @@ session_start();
 		$_SESSION['logged_in'] = true;
 		$_SESSION['logged_in_user'] = $username;
 		$_SESSION['logged_in_user_email'] = $email;
-		echo "You are now logged in " . $_SESSION['logged_in_user'] . ". You will be redirected to the homepage.";
-		print_r($row);
-		echo $row['type'];
 	}
 	if ($row['type'] == 'admin'){
 		session_regenerate_id(true);
 		$_SESSION['user_admin'] = true;
 		echo "welcome admin";
-}
-
-	else{
-		echo "Invalid username and password";
 	}
+
+	//else{
+		//echo "Invalid username and password";
+	//}
 				}
-				else {
-}
+
 if (isset($_SESSION['logged_in'])) {
 		//header("Refresh: 5; ");
 	}
@@ -84,17 +80,6 @@ if($_POST["submit1"]){ //when loggot is clicked should unset cookie but i have a
 </head>
 
 <body>
-  <div class = "forms">
-					 <form action="" method="POST">
-					 <p>User Name:</p><input type="text" class="forms" name="username"><br/><br/>
-					 <p>Password:</p><br/><input type="password" class="forms" name="password"><br/><br/>
-						<input type="submit" class="forms" value="submit" name ="submit"> <br/><br/>
-					 </form>
-           <form action="" method="POST">
-           <input type="submit" class="forms" value="logout" name= "submit1"><br/>
-
-</form>
-           <p><?php echo $_SESSION['logged_in_user']; ?></p>
 
   <div class="landingPic">
     <nav class="navbar navbar-expand-sm navbar-light navbar-custom">
@@ -117,61 +102,42 @@ if($_POST["submit1"]){ //when loggot is clicked should unset cookie but i have a
     </nav>
   </div>
 
-  <header>
-    <a href="#">
-  <!--<img src="srcs/starLogoTest.png" height='42px'>--><h1 class="about">Star Parks</h1>
-</a>
-  </header>
+	<div class="content about" id="aboutUs">
+		<div class = "forms form-group">
+						 <form action="" method="POST">
+							 <br/><p>Password
+							 <br/><input type="password" class="forms" name="password"><br/><br/></p>
+						 <p>Username
+						 <input type="text" class="forms" name="username"><br/><br/></p>
+							<input type="submit" class="forms" value="Submit" name ="submit"> <br/><br/>
+						 </form>
+	           <form action="" method="POST">
+	           <input type="submit" class="forms" value="Logout" name= "submit1"><br/>
+
+	</form>
 
 
-    <div class="content footer">
-      <h6><b>Booking:</b> starparksbooking@gmail.com
-        <br><br><b>Label:</b> Paper Trail Records •
-      Dan Finnegan & Jack Rainey <br><br>All Content Copyrighted Brave Advisor Songs
-       - BMI<br><br>Andy Bianculli - guitar, vocals • Ben Burdick - bass, vocals • Nathaniel
-        Klugman - keys • Keith Lough - drums • Derek Phelps - trumpet • Wayne Myers - trombone</h6>
-        <br>
-      <a href="https://www.facebook.com/StarParksBand/" class="button"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/star_parks/" class="button"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/star_parks" class="button"><i class="fab fa-twitter"></i></a>
-    </div>
-  <!--
-  <li><span class="date">SEP 6 THU</span><span class="venue">Hotel Vegas</span><span class="city">Austin, TX, United States</span><button type="button" class="btn btn-outline-dark">Tickets</button>
-    <hr>
-  </li>
-  <li><span class="date">SEP 6 THU</span><span class="venue">Hotel Vegas</span><span class="city">Austin, TX, United States</span><button type="button" class="btn btn-outline-dark">Tickets</button>
-    <hr>
-  </li>
-  <li><span class="date">SEP 6 THU</span><span class="venue">Hotel Vegas</span><span class="city">Austin, TX, United States</span><button type="button" class="btn btn-outline-dark">Tickets</button>
-    <hr>
-  </li>
--->
-  <!--
-    <input type="text" id="add" size ="50"/>
-    <input type="button" id="addShow" value="Add Show" onclick="addShow()"></input>
--->
-  <!--
-  <div class="newsletter">
-  <h2>Subscribe to our newsletter</h2>
 
-  <div class="container">
-    <form>
-      <div class="form-row">
-        <div class="col">
-          <input type="text" class="form-control" placeholder="First name">
-        </div>
-        <div class="col">
-          <input type="text" class="form-control" placeholder="Last name">
-        </div>
-        <br>
-        <div class="form-group">
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-        </div>
-      </div>
-    </form>
+	<!--
+	<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
-</div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 -->
+
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>

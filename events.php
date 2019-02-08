@@ -31,17 +31,7 @@ session_start();
 </head>
 
 <body>
-  <div class = "forms">
-					 <form action="" method="POST">
-					 <p>User Name:</p><input type="text" class="forms" name="username"><br/><br/>
-					 <p>Password:</p><br/><input type="password" class="forms" name="password"><br/><br/>
-						<input type="submit" class="forms" value="submit" name ="submit"> <br/><br/>
-					 </form>
-           <form action="" method="POST">
-           <input type="submit" class="forms" value="logout" name= "submit1"><br/>
 
-</form>
-           <p><?php echo $_SESSION['logged_in_user']; ?></p>
 
   <div class="landingPic">
     <nav class="navbar navbar-expand-sm navbar-light navbar-custom">
@@ -64,12 +54,20 @@ session_start();
     </nav>
   </div>
 
-  <header>
-    <a href="#">
-  <!--<img src="srcs/starLogoTest.png" height='42px'>--><h1 class="about">Star Parks</h1>
-</a>
-  </header>
+<div class="content about" id="form">
+	<div class = "forms">
+					 <form action="" method="POST">
+					 <p>User Name:</p><input type="text" class="forms" name="username"><br/><br/>
+					 <p>Password:</p><br/><input type="password" class="forms" name="password"><br/><br/>
+						<input type="submit" class="forms" value="submit" name ="submit"> <br/><br/>
+					 </form>
+           <form action="" method="POST">
+           <input type="submit" class="forms" value="logout" name= "submit1"><br/>
 
+</form>
+           <p><?php echo $_SESSION['logged_in_user']; ?></p>
+</div>
+</div>
 
 	<section class="test3 shows" id="viewShows">
  <h1 style="text-align:center">Shows</h1>
@@ -78,7 +76,7 @@ session_start();
  <table>
 	 <tbody>
 	                 <?php
-	     	
+
 
 	      $sql = "SELECT * FROM events";
 	      /*$sql= "SELECT * FROM products ORDER BY id ASC";*/
@@ -119,17 +117,6 @@ session_start();
 		  </tbody>
 		 </table>
 		 </section>
-    <div class="content footer">
-      <h6><b>Booking:</b> starparksbooking@gmail.com
-        <br><br><b>Label:</b> Paper Trail Records •
-      Dan Finnegan & Jack Rainey <br><br>All Content Copyrighted Brave Advisor Songs
-       - BMI<br><br>Andy Bianculli - guitar, vocals • Ben Burdick - bass, vocals • Nathaniel
-        Klugman - keys • Keith Lough - drums • Derek Phelps - trumpet • Wayne Myers - trombone</h6>
-        <br>
-      <a href="https://www.facebook.com/StarParksBand/" class="button"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/star_parks/" class="button"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/star_parks" class="button"><i class="fab fa-twitter"></i></a>
-    </div>
   <!--
   <li><span class="date">SEP 6 THU</span><span class="venue">Hotel Vegas</span><span class="city">Austin, TX, United States</span><button type="button" class="btn btn-outline-dark">Tickets</button>
     <hr>

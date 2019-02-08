@@ -1,0 +1,214 @@
+<?php
+	require 'dbconnect2.php';
+
+	 ?>
+
+
+
+ <!doctype html>
+ <html lang="en">
+
+ <head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles.css">
+
+   <title>Star Parks</title>
+   <link rel="shortcut icon" href="srcs/starLogoTest.png" />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+ </head>
+
+ <body>
+
+   <div class="landingPic">
+     <nav class="navbar navbar-expand-sm navbar-light navbar-custom">
+       <a class="navbar-brand nav-item" href="#">
+         <span class="d-sm-inline-block d-none">Star Parks</span>
+  <img class="fa fa-star d-inline-block d-sm-none" src="srcs/starLogoTest.png" height='50px'>
+         </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav right-to-left ml-auto">
+           <a class="nav-item nav-link listen" href="https://starparks.bandcamp.com/">Listen</a>
+           <a class="nav-item nav-link shows" href="index.html#viewShows">Shows</a>
+           <a class="nav-item nav-link merch" href="merch">Merch</a>
+           <a class="nav-item nav-link videos" href="videos">Videos</a>
+           <a class="nav-item nav-link about" href="index.html#aboutUs">About</a>
+         </div>
+       </div>
+     </nav>
+   </div>
+
+   <header>
+     <a href="#">
+   <!--<img src="srcs/starLogoTest.png" height='42px'>--><h1 class="about">Star Parks</h1>
+ </a>
+   </header>
+
+   <div class="bandCarousel">
+     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+       <div class="carousel-inner">
+         <div class="carousel-item active">
+           <img class="d-block w-100" src="srcs/pic1.jpg" alt="First slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic2.jpg" alt="Second slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic3.jpg" alt="Third slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic4.jpg" alt="Third slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic5.jpg" alt="Third slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic6.jpg" alt="Third slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic7.jpg" alt="Third slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic8.jpeg" alt="Third slide">
+         </div>
+         <div class="carousel-item">
+           <img class="d-block w-100" src="srcs/pic9.jpeg" alt="Third slide">
+         </div>
+       </div>
+       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">Previous</span>
+   </a>
+       <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">Next</span>
+   </a>
+     </div>
+   </div>
+
+   <div class="content about" id="aboutUs">
+     <img src="srcs/starLogoTest.png" alt="" class="starLogo" height="100px" width="100px">
+     <br/>
+     <br/>
+     <div class="testBox">
+       <h5>The project of Austin, Texas songwriter Andy Bianculli, Star Parks mixes '60s psychedelia and girl group pop with painstaking arrangements in the lineage of Lee Hazelwood, Jon Brion and Brian Wilson. The result is a set of bittersweet tracks full of melancholy and exuberance that is Don't Dwell, their debut album available on Paper Trail Records.
+ Star Parks' debut album, released in 2016, has caught recognition by Paste Magazine, Daytrotter, The Austin Chronicle, KUTX 98.9, Do512, Austin Monthly, Austin Culture Man and Bandcamp. Star Parks frequents local favorite venues such as: 3Ten, The Mohawk, Stubb's, Cheer Up Charlie's, The Scoot Inn, Stay Gold, ABGB, Hotel Vegas and has toured internationally.
+ </h5></div>
+   </div>
+
+   <section class="listenSection listen">
+     <div class="container listenBanner">
+       <br>
+       <iframe class="bcLink" style="border: 0; padding: 0; width: 350px; height: 600px;" src="https://bandcamp.com/EmbeddedPlayer/album=1457023448/size=large/bgcol=ffffff/linkcol=63b2cc/transparent=true/" seamless><a href="http://starparks.bandcamp.com/album/dont-dwell-2">Don&#39;t Dwell by Star Parks</a></iframe>
+       <p>
+         <span class="austinMonthly">"Refined, meticulous arrangements drift effortlessly along, expanding and contracting as instruments and harmonies float in and out of this cycle of pop gems" – Austin Monthly</span>
+         <br/><br/><span class="underRadar">  “Evocative of a past era but casting a new spell each time you play it” — Under the Radar</span>
+         <br/><br/><span class="bcQuote">"Erudite chamber pop that hearkens back to the elegant and experimental production of the 1960s, swinging from melancholia to playfulness" – Bandcamp</span>
+         <br/><br/><span class="goldFlake">“This often-brilliant record feels like the summer’s ultimate calling-card”— Gold Flake Paint</span>
+         <br/><br/><span class="sweetSymphonies">“Star Park’s ‘Don’t Dwell’ is a gloriously hazy – undeniably 70’s – endearingly bittersweet masterpiece. It is romantic in the truest sense of the word. Its nine tracks all hum heavily with a sort of ethereal fuzz, and each boast their own wonderful rustic charm. I am absolutely attached. I needed this in my life.”— Bitter Sweet Symphonies</span>
+       </p>
+     </div>
+   </section>
+
+   <div class="vertNav">
+     <ul class="mobileNav">
+       <div class="container">
+       <li><a class="listen" href="https://starparks.bandcamp.com/">Listen</a>
+       </li>
+       <li><a class="shows" id="showBtn">Shows</a>
+       </li>
+       <li><a class="merch" href="merch.html">Merch</a>
+       </li>
+       <li><a class="videos" href="videos.html">Videos</a>
+       </li>
+       <li><a class="about" id="aboutBtn">About</a>
+       </li>
+     </div>
+     </ul>
+   </div>
+
+ <section class="mobileBottom">
+   <img src="srcs/starLogoTest.png" height='55px'>
+   <br>
+   <br>
+ </section>
+
+ <section class="test3 shows" id="viewShows">
+
+ <h1 style="text-align:center">Shows</h1>
+ <hr>
+ <br>
+ <table>
+
+	 <?php
+	 $sql = "SELECT * FROM shows ORDER BY date";
+	 $result = mysqli_query($connection, $sql) or die("Bad Query: $sql");
+
+	 while($row = mysqli_fetch_assoc($result)) {
+		 $originalDate = $row['date'];
+		 $newDate = date("d M", strtotime($originalDate));
+
+		 $today = date("Y-m-d");
+
+		 if ($originalDate >= $today) {
+		 		echo"<tr><td>{$newDate}</td><td>{$row['venue']}</td><td>{$row['city']}</td><td>{$row['ticketLink']}</td></tr>\n";
+	 		}
+ 		}
+	 ?>
+
+</table>
+</section>
+<div class="content footer">
+
+	<form action="handle.php" method="POST">
+  <div class="form-group">
+    <h4>Sign up for our newsletter</h4>
+		<div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name" name="firstName">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name" name="lastName">
+    </div>
+  </div>
+	<br>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+    <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+  </div>
+  <button type="submit" class="btn btn-primary" value="Insert">Submit</button>
+</form>
+<br>
+<br>
+
+	<h6><b>Booking:</b> starparksbooking@gmail.com
+		<br><br><b>Label:</b> Paper Trail Records •
+	Dan Finnegan & Jack Rainey <br><br>All Content Copyrighted Brave Advisor Songs
+	 - BMI<br><br>Andy Bianculli - guitar, vocals • Ben Burdick - bass, vocals • Nathaniel
+		Klugman - keys • Keith Lough - drums • Derek Phelps - trumpet • Wayne Myers - trombone</h6>
+		<br>
+	<a href="https://www.facebook.com/StarParksBand/" class="button"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://www.instagram.com/star_parks/" class="button"><i class="fab fa-instagram"></i></a>
+	<a href="https://twitter.com/star_parks" class="button"><i class="fab fa-twitter"></i></a>
+</div>
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+   <script src="styles.js"></script>
+   <script src="main.js" type="text/javascript"></script>
+
+
+ </body>
+
+ </html>

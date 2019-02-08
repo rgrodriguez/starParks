@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
   $("#showFormBtn").click(function () {
     $('#showForm').append('<form>\
     <div class="form-group">\
@@ -44,6 +44,7 @@ $(document).ready(function() {
       $('#dateSelect').append($('<option></option>').val(i).html(i))};
   });
 });
+*/
 
 $('#showBtn').one('click', function() {
   $('#showBtn').append('<br><table>\
